@@ -1,36 +1,78 @@
-# NyayaShield
+# 🛡️ NyayaShieldAI
 
-## What this prototype does
-- Citizen registration and login
-- Separate citizen, authority and admin roles
-- Complaint filing
-- Unique Complaint ID
-- AI-assisted rule-based risk scoring
-- Authority dashboard
-- Status updates
-- Public complaint tracking by Complaint ID
-- JSON persistence without SQLite or native Node modules
+## AI-Powered Complaint Intelligence & Justice Support Platform
 
-## Run locally
-### Requirement
-Install Node.js (18+ recommended).
+> ### **From Complaint to Resolution — Smarter, Faster, Transparent.**
 
-### Commands
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd NyayaShield_FullStack
-node server.js
-```
+---
 
-Open:
-http://localhost:4000
+# 🌐 Live Demo
 
-No `npm install` is required for this version.
+## 🚀 NyayaShieldAI Public Application
 
-## Demo authority login
-Email: authority@nyayashield.local
-Password: Authority@123
+👉 **[Click Here to Open the Live Demo](https://nyayashield1.onrender.com)**
 
+### Public URL
+
+**https://nyayashield1.onrender.com**
+
+---
+
+# 📌 Project Overview
+
+NyayaShieldAI is an AI-powered digital complaint intelligence and justice support platform designed to improve the way citizens submit, track, and manage complaints.
+
+The system connects three major stakeholders:
+
+- 👤 **Citizens**
+- 🏛️ **Authorities**
+- 👨‍💼 **Administrators**
+
+NyayaShieldAI creates a transparent digital workflow from complaint submission to case monitoring and resolution.
+
+---
+
+# 🎯 Problem Statement
+
+Traditional complaint management processes can face several challenges:
+
+- Lack of transparency
+- Difficulty in tracking complaint progress
+- Delayed identification of urgent complaints
+- Manual prioritization of cases
+- Lack of centralized monitoring
+- Difficulty in measuring authority performance
+
+Citizens may not always know what happens after submitting a complaint.
+
+Authorities may need to manually review and prioritize multiple cases.
+
+Administrators may lack a centralized system for monitoring complaints and performance.
+
+---
+
+# 💡 Our Solution
+
+NyayaShieldAI provides a centralized digital platform where:
+
+```text
+Citizen
+   ↓
+Register & Login
+   ↓
+File Complaint
+   ↓
+AI Risk Analysis
+   ↓
+Risk Classification
+   ↓
+Authority Reviews Case
+   ↓
+Case Status Updated
+   ↓
+Citizen Tracks Progress
+   ↓
+Admin Monitors Analytics
 ## Demo admin login
 Email: admin@nyayashield.local
 Password: Admin@123
