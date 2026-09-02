@@ -1,38 +1,34 @@
-# 🛡️ NyayaShieldAI
-
+#  NyayaShieldAI
 ## AI-Powered Complaint Intelligence & Justice Support Platform
+### **From Complaint to Resolution — Smarter, Faster, Transparent.**
 
-> ### **From Complaint to Resolution — Smarter, Faster, Transparent.**
 
----
+#  Live Demo
 
-# 🌐 Live Demo
+## NyayaShieldAI Public Application
 
-## 🚀 NyayaShieldAI Public Application
-
-👉 **[Click Here to Open the Live Demo](https://nyayashield1.onrender.com)**
+ **[Click Here to Open the Live Demo](https://nyayashield1.onrender.com)**
 
 ### Public URL
 
 **https://nyayashield1.onrender.com**
 
----
 
-# 📌 Project Overview
+# Project Overview
 
 NyayaShieldAI is an AI-powered digital complaint intelligence and justice support platform designed to improve the way citizens submit, track, and manage complaints.
 
 The system connects three major stakeholders:
 
-- 👤 **Citizens**
-- 🏛️ **Authorities**
-- 👨‍💼 **Administrators**
+- **Citizens**
+- **Authorities**
+- **Administrators**
 
 NyayaShieldAI creates a transparent digital workflow from complaint submission to case monitoring and resolution.
 
 ---
 
-# 🎯 Problem Statement
+# Problem Statement
 
 Traditional complaint management processes can face several challenges:
 
@@ -49,13 +45,11 @@ Authorities may need to manually review and prioritize multiple cases.
 
 Administrators may lack a centralized system for monitoring complaints and performance.
 
----
 
-# 💡 Our Solution
+# Our Solution
 
 NyayaShieldAI provides a centralized digital platform where:
 
-```text
 Citizen
    ↓
 Register & Login
@@ -73,6 +67,7 @@ Case Status Updated
 Citizen Tracks Progress
    ↓
 Admin Monitors Analytics
+
 ## Demo admin login
 Email: admin@nyayashield.local
 Password: Admin@123
@@ -81,7 +76,7 @@ Password: Admin@123
 The demo credentials are for prototype demonstration only. Change/remove them before any real deployment.
 
 ## GitHub
-```bash
+in bash
 git init
 git add .
 git commit -m "Initial NyayaShield full stack prototype"
