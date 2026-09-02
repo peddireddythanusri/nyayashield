@@ -82,6 +82,7 @@ Citizen Complaint Tracking
         |
         v
 Admin Monitoring and Analytics
+```
 
 Complete System Workflow
 Step 1: Citizen Registration
@@ -126,6 +127,7 @@ Manage assigned cases
 Step 8: Case Status Update
 Authorities update the complaint status according to the progress of the case.
 The workflow can follow:
+```text
 Submitted
     |
     v
@@ -142,6 +144,8 @@ Resolved
     |
     v
 Closed
+
+```
 Step 9: Citizen Tracking
 The citizen can track the complaint using the Complaint ID.
 The system displays information such as:
@@ -160,7 +164,7 @@ Complaint Analytics
 Authority Performance
 Resolution Performance
 NyayaShieldAI provides a centralized digital platform where:
-
+```text
 Citizen
    ↓
 Register & Login
@@ -178,7 +182,7 @@ Case Status Updated
 Citizen Tracks Progress
    ↓
 Admin Monitors Analytics
-
+```
 ## Demo admin login
 Email: admin@nyayashield.local
 Password: Admin@123
@@ -194,7 +198,7 @@ git commit -m "Initial NyayaShield full stack prototype"
 git branch -M main
 git remote add origin <YOUR-GITHUB-REPOSITORY-URL>
 git push -u origin main
-```
+
 
 ## Deployment
 GitHub Pages can host only the static frontend, not this Node.js server. Deploy the backend to a Node-compatible host and configure the frontend API URL for a public production deployment.
