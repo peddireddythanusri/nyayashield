@@ -199,7 +199,7 @@ VIEW CASE PROGRESS                   ANALYTICS
                            END
 
 
-
+```
 ### explanation 
 
 **Citizen registers and logs in, files a complaint, and the system generates a unique Complaint ID. The complaint undergoes risk analysis and is classified as High, Medium, or Low Risk. The complaint is stored and appears in the Authority Dashboard. The authority reviews the case and updates its status throughout the investigation. The citizen can track the progress using the Complaint ID, while the administrator monitors total users, complaints, high-risk cases, analytics, and authority performance. Finally, the case reaches resolution and closure.**
