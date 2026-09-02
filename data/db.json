@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "AUT-001",
+      "name": "NyayaShield Authority",
+      "email": "authority@nyayashield.local",
+      "password": "9fde69ca4952565f6d526405c482763a:07995be8392ab5dfac1492f36d83e95f3556544c10054f16f47d472f48176239dcde08b103a126e92fecb2b83c64834e3c14fbd3f9385b214eee3cdd5971020e",
+      "role": "AUTHORITY",
+      "createdAt": "2026-09-02T16:27:50.280Z"
+    },
+    {
+      "id": "ADM-001",
+      "name": "NyayaShield Administrator",
+      "email": "admin@nyayashield.local",
+      "password": "cf2fbf03accf37e2fe1cdb70b4bae75d:13bea31a359a781990ba88b65c02c52de7c30c7ef4a286a7252590a40c5c416d1085173b2abf501cb79247a6e08f8c58fba6f1dac9bbe912a6363f593f6eb50e",
+      "role": "ADMIN",
+      "createdAt": "2026-09-02T16:27:50.334Z"
+    },
+    {
+      "id": "USR-2026-558634",
+      "name": "Thanusri Peddireddy",
+      "email": "peddireddythanusri@gmail.com",
+      "password": "fcb86f9d0e5adc795abe4e6495b7a0fe:a1ec47cb78869beecd7e7f9ac161480e778067267fa2de92b59f2cf45052d21ae0a27ec20cbf0de412a99843c2e28f0719faf78a84ac728516cc468d3461e389",
+      "role": "USER",
+      "createdAt": "2026-09-02T16:30:48.157Z"
+    }
+  ],
+  "complaints": [
+    {
+      "id": "NYS-2026-288B69",
+      "userId": "USR-2026-558634",
+      "reporterName": "Anonymous Citizen",
+      "category": "Cyber Crime",
+      "description": "sending messages",
+      "location": "Hyderabad",
+      "anonymous": true,
+      "status": "ASSIGNED",
+      "assignedTo": "NyayaShield Authority",
+      "createdAt": "2026-09-02T16:31:34.679Z",
+      "updatedAt": "2026-09-02T16:32:35.710Z",
+      "ai": {
+        "score": 24,
+        "risk": "LOW",
+        "priority": "NORMAL",
+        "indicators": [
+          "cyber crime"
+        ]
+      }
+    }
+  ],
+  "sessions": []
+}
