@@ -1,9 +1,12 @@
 {
   "name": "nyayashield",
-  "version": "1.0.0",
-  "description": "AI-powered complaint management and risk prioritization prototype",
+  "version": "2.0.0",
+  "description": "NyayaShield AI Complaint Intelligence Platform",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

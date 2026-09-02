@@ -893,9 +893,6 @@ const server = http.createServer(async (req, res) => {
     }
 });
 
-server.listen(PORT, () => {
-    console.log("======================================");
-    console.log("🛡️ NyayaShieldAI Version 2");
-    console.log(`🚀 Running: http://localhost:${PORT}`);
-    console.log("======================================");
+server.listen(PORT, "0.0.0.0", () => {
+    console.log(`NyayaShield running on port ${PORT}`);
 });
