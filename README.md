@@ -84,121 +84,122 @@ Citizen Complaint Tracking
 Admin Monitoring and Analytics
 ```
 
-Complete System Workflow
-Step 1: Citizen Registration
-A new user creates an account by providing:
-Name
-Email Address
-Password
-The system validates the information and creates the citizen account.
-Step 2: Citizen Login
-The registered citizen logs into the NyayaShieldAI platform using their email address and password.
-After successful authentication, the citizen can access the complaint dashboard.
-Step 3: File a Complaint
-The citizen enters the complaint information, including:
-Complaint Category
-Complaint Description
-Location Information
-Additional Details
-The complaint is submitted to the system.
-Step 4: Complaint ID Generation
-After successful submission, the system generates a unique Complaint ID.
-This ID helps identify and track the complaint throughout its lifecycle.
-Step 5: Complaint Risk Analysis
-The system analyzes the complaint description and identifies important indicators.
-The complaint is assigned:
-Risk Score
-Risk Level
-Priority Level
-Important Indicators
-Step 6: Risk Classification
-The complaint is classified into one of the following categories:
-High Risk
-Medium Risk
-Low Risk
-High-risk complaints can receive priority attention from the authority.
-Step 7: Authority Review
-Authorized personnel log into the Authority Portal.
-They can:
-View submitted complaints
-Review complaint information
-Identify complaint risk levels
-Manage assigned cases
-Step 8: Case Status Update
-Authorities update the complaint status according to the progress of the case.
-The workflow can follow:
+# System Workflow
+
 ```text
-Submitted
-    |
-    v
-Under Review
-    |
-    v
-Assigned
-    |
-    v
-Investigation in Progress
-    |
-    v
-Resolved
-    |
-    v
-Closed
+START
+  |
+  v
+OPEN NYAYASHIELDAI APPLICATION
+  |
+  v
+HOME PAGE
+  |
+  v
+SELECT PORTAL
+  |
+  +---------------------------------------------------+
+  |                     |                           |
+  v                     v                           v
+CITIZEN PORTAL      AUTHORITY PORTAL             ADMIN PORTAL
+  |                     |                           |
+  v                     v                           v
+REGISTER / LOGIN     AUTHORITY LOGIN              ADMIN LOGIN
+  |                     |                           |
+  v                     v                           v
+CITIZEN DASHBOARD    AUTHORITY DASHBOARD          ADMIN DASHBOARD
+  |                     |                           |
+  v                     |                           |
+FILE COMPLAINT       |                           |
+  |                   |                           |
+  v                   |                           |
+ENTER COMPLAINT      |                           |
+DETAILS              |                           |
+  |                   |                           |
+  v                   |                           |
+SUBMIT COMPLAINT     |                           |
+  |                   |                           |
+  v                   |                           |
+GENERATE UNIQUE      |                           |
+COMPLAINT ID         |                           |
+  |                   |                           |
+  v                   |                           |
+RISK ANALYSIS        |                           |
+  |                   |                           |
+  v                   |                           |
+RISK CLASSIFICATION  |                           |
+  |                   |                           |
+  +---------+---------+                           |
+  |         |         |                           |
+  v         v         v                           |
+HIGH      MEDIUM      LOW                         |
+RISK      RISK        RISK                        |
+  |         |         |                           |
+  +---------+---------+                           |
+            |                                     |
+            v                                     |
+     STORE COMPLAINT IN DATABASE                  |
+            |                                     |
+            +-------------------------------------+
+            |
+            v
+COMPLAINT APPEARS IN AUTHORITY DASHBOARD
+            |
+            v
+AUTHORITY VIEWS ALL COMPLAINTS
+            |
+            v
+AUTHORITY SELECTS A CASE
+            |
+            v
+REVIEWS COMPLAINT DETAILS AND RISK LEVEL
+            |
+            v
+UPDATES CASE STATUS
+            |
+            v
+UNDER REVIEW
+            |
+            v
+ASSIGNED
+            |
+            v
+INVESTIGATION IN PROGRESS
+            |
+            v
+RESOLVED
+            |
+            v
+CLOSED
+            |
+            v
+STATUS SAVED IN SYSTEM
+            |
+            +-------------------------------+
+            |                               |
+            v                               v
+CITIZEN TRACKS COMPLAINT              ADMIN MONITORS SYSTEM
+            |                               |
+            v                               v
+VIEW COMPLAINT ID                    TOTAL USERS
+VIEW RISK LEVEL                      TOTAL COMPLAINTS
+VIEW CURRENT STATUS                  HIGH-RISK CASES
+VIEW CASE PROGRESS                   ANALYTICS
+            |                        AUTHORITY PERFORMANCE
+            |                               |
+            +---------------+---------------+
+                            |
+                            v
+                   SYSTEM MONITORING
+                            |
+                            v
+                     CASE RESOLUTION
+                            |
+                            v
+                           END
 
-```
-Step 9: Citizen Tracking
-The citizen can track the complaint using the Complaint ID.
-The system displays information such as:
-Complaint Status
-Risk Level
-Priority
-Submission Details
-Case Progress
-Step 10: Administrator Monitoring
-The administrator logs into the Admin Dashboard.
-The administrator can monitor:
-Total Registered Users
-Total Complaints
-High-Risk Cases
-Complaint Analytics
-Authority Performance
-Resolution Performance
-NyayaShieldAI provides a centralized digital platform where:
-```text
-Citizen
-   ↓
-Register & Login
-   ↓
-File Complaint
-   ↓
-AI Risk Analysis
-   ↓
-Risk Classification
-   ↓
-Authority Reviews Case
-   ↓
-Case Status Updated
-   ↓
-Citizen Tracks Progress
-   ↓
-Admin Monitors Analytics
-```
-## Demo admin login
-Email: admin@nyayashield.local
-Password: Admin@123
-
-## Important
-The demo credentials are for prototype demonstration only. Change/remove them before any real deployment.
-
-## GitHub
-in bash
-git init
-git add .
-git commit -m "Initial NyayaShield full stack prototype"
-git branch -M main
-git remote add origin <YOUR-GITHUB-REPOSITORY-URL>
-git push -u origin main
 
 
-## Deployment
-GitHub Pages can host only the static frontend, not this Node.js server. Deploy the backend to a Node-compatible host and configure the frontend API URL for a public production deployment.
+### explanation 
+
+**Citizen registers and logs in, files a complaint, and the system generates a unique Complaint ID. The complaint undergoes risk analysis and is classified as High, Medium, or Low Risk. The complaint is stored and appears in the Authority Dashboard. The authority reviews the case and updates its status throughout the investigation. The citizen can track the progress using the Complaint ID, while the administrator monitors total users, complaints, high-risk cases, analytics, and authority performance. Finally, the case reaches resolution and closure.**
